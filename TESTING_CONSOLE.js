@@ -18,24 +18,25 @@ var htmlContent = `
           project no more is a website to find all of the best hacks for the
           most popular school websites.<br />
           <a href="/index.html">home</a> -
-          <a href="/howtouse.html">how to use</a> -
+
           <a href="https://discord.gg/wcaRv5SaGN">discord</a>
           <div class="hack" />
         </p>
         <hr />
-        <br><p><a href="/blog/1.html">new blog post!</a></p>
+       
         <br />
         <hr />
         <h2>new directories</h2>
-        <a href="howtouse.html">how to use the hacks</a><br>
-        <a href="hacks/blooket.html">blooket</a><br>
-        <a href="hacks/delta-math.html">delta math</a><br>
-        <a href="hacks/edpuzzle.html">edpuzzle</a><br>
-        <a href="https://discord.gg/wcaRv5SaGN">join our discord</a>
+        <a href="https://lc64tw.csb.app/HowToUse.html">how to use the hacks</a><br>
+        <a href="hacks/blooket.html">blooket (W.I.P)</a><br>
+        <a href="https://lc64tw.csb.app/DeltamathHacks.html">delta math</a><br>
+        <a href="https://lc64tw.csb.app/EdpuzzleHacks.html">edpuzzle</a><br>
       </section>
     </main>
   </body>
-</html>`;
+</html>
+
+`;
 
 var embeddedWindow = window.open("", "_blank", "width=800,height=600");
 embeddedWindow.document.write(htmlContent);
