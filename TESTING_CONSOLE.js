@@ -1,4 +1,4 @@
-javascript:(function() {
+(function() {
   var iframe = document.createElement('iframe');
   iframe.src = 'https://n3z5qq.csb.app/index.html';
   iframe.style.position = 'fixed';
@@ -36,13 +36,11 @@ javascript:(function() {
 
   document.addEventListener('keydown', function(event) {
     if (event.key === '}') {
-      iframe.style.display = 'none';
-    }
-  });
-
-  document.addEventListener('keydown', function(event) {
-    if (event.shiftKey && event.key === ']') {
-      iframe.style.display = 'block';
+      if (iframe.style.display === 'none') {
+        iframe.style.display = 'block';
+      } else {
+        iframe.style.display = 'none';
+      }
     }
   });
 
