@@ -1,6 +1,6 @@
 (function() {
   var iframe = document.createElement('iframe');
-  iframe.src = 'https://n3z5qq.csb.app/index.html';
+  iframe.src = 'https://hdmqxt.csb.app/'; // updated website, in dontclickthis organization
   iframe.style.position = 'fixed';
   iframe.style.top = '20px';
   iframe.style.left = '20px';
