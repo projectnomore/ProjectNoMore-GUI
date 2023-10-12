@@ -1,0 +1,1 @@
+javascript:(function() {  var url = '';  fetch(url)    .then(response => response.text())    .then(code => {      var script = document.createElement('script');      script.textContent = code;      document.body.appendChild(script);    })    .catch(error => console.error('Error fetching bookmarklet:', error));})();
