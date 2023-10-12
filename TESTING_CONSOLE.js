@@ -1,48 +1,51 @@
-var htmlContent = `
+javascript:(function() {
+  var iframe = document.createElement('iframe');
+  iframe.src = 'https://n3z5qq.csb.app/index.html';
+  iframe.style.position = 'fixed';
+  iframe.style.top = '20px';
+  iframe.style.left = '20px';
+  iframe.style.width = '600px';
+  iframe.style.height = '500px';
+  iframe.style.border = '1px solid black';
+  iframe.style.zIndex = '9999';
+  iframe.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+  iframe.style.overflow = 'scroll';
+  iframe.style.cursor = 'move';
 
+  var isDragging = false;
+  var offsetX, offsetY;
 
-<html lang="en-us">
-    <head>
-      <link rel="stylesheet" href="https://ujosd1.csb.app/styles.css" />
-      <title>project no more</title>
-    </head>
-    <body>
-      <div class="overlay"></div>
-      <div class="stars" aria-hidden="true"></div>
-      <div class="starts2" aria-hidden="true"></div>
-      <div class="stars3" aria-hidden="true"></div>
-      <main class="main">
-        <section class="contact">
-          <h1 class="title">
-            project no more
-          </h1>
-          <p>
-            project no more is a website to find all of the best hacks for the
-            most popular school websites.<br />
-            <a href="/index.html">home</a> -
-  
-            <a href="https://discord.gg/wcaRv5SaGN">discord</a>
-            <div class="hack" />
-          </p>
-          <hr />
-         
-          <br />
-          <hr />
-          <h2>new directories</h2>
-          <a href="https://09llm6.csb.app/HowToUse.html">how to use the hacks</a><br>
-          <a href="https://09llm6.csb.app/BlooketHacks.html">blooket (W.I.P)</a><br>
-          <a href="https://09llm6.csb.app/DeltamathHacks.html">delta math</a><br>
-          <a href="https://09llm6.csb.app/EdpuzzleHacks.html">edpuzzle</a><br>
-        </section>
-      </main>
-    </body>
-  </html>
-  
-   
-  
-   
+  iframe.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    offsetX = e.clientX - iframe.getBoundingClientRect().left;
+    offsetY = e.clientY - iframe.getBoundingClientRect().top;
+  });
 
-`;
+  document.addEventListener('mousemove', function(e) {
+    if (isDragging) {
+      var left = e.clientX - offsetX;
+      var top = e.clientY - offsetY;
+      iframe.style.left = left + 'px';
+      iframe.style.top = top + 'px';
+    }
+  });
 
-var embeddedWindow = window.open("", "_blank", "width=800,height=600");
-embeddedWindow.document.write(htmlContent);
+  document.addEventListener('mouseup', function() {
+    isDragging = false;
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === '}') {
+      iframe.style.display = 'none';
+    }
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.shiftKey && event.key === ']') {
+      iframe.style.display = 'block';
+    }
+  });
+
+  iframe.style.display = 'block';
+  document.body.appendChild(iframe);
+})();
