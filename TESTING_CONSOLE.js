@@ -1,5 +1,6 @@
 var htmlContent = `
 
+
 <html lang="en-us">
     <head>
       <link rel="stylesheet" href="https://ujosd1.csb.app/styles.css" />
@@ -28,14 +29,16 @@ var htmlContent = `
           <br />
           <hr />
           <h2>new directories</h2>
-          <a href="https://lc64tw.csb.app/HowToUse.html">how to use the hacks</a><br>
-          <a href="hacks/blooket.html">blooket (W.I.P)</a><br>
-          <a href="https://lc64tw.csb.app/DeltamathHacks.html">delta math</a><br>
-          <a href="https://lc64tw.csb.app/EdpuzzleHacks.html">edpuzzle</a><br>
+          <a href="https://09llm6.csb.app/HowToUse.html">how to use the hacks</a><br>
+          <a href="https://09llm6.csb.app/BlooketHacks.html">blooket (W.I.P)</a><br>
+          <a href="https://09llm6.csb.app/DeltamathHacks.html">delta math</a><br>
+          <a href="https://09llm6.csb.app/EdpuzzleHacks.html">edpuzzle</a><br>
         </section>
       </main>
     </body>
   </html>
+  
+   
   
    
 
